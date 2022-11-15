@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/Boka Bastu/stylebastu.css">
+    <title>Boka Bastu</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+          <li><a href="/Index.html">
+          <img src="/Logo/bollen.png" alt="tennis" style="width:42px;height:42px;"></a>
+          <li><a href="/Header/Om.html">Om</a></li>
+          <li><a href="/Header/kontakt.html" target="main">Kontakt</a></li>
+          <li><a href="/Header/Öppettider.html">Öppettider</a></li>
+          <li><a href="/Header/Följoss.html">Följ oss</a></li>
+          <li><a href="/Header/Loginformulär.html">Bli Medlem</a></li>
+          
+        </ul>
+      </nav>
+    </header>
+
+
+    <article>
+        <h1 style="font-size:100px;"></h1>
+        
+        </article>
+
+
+     <div class="container">
+        <form id="Form1">
+            <h3>Personlig information</h3>
+            <input type="text" placeholder="Namn"requierd>
+            <input type="text" placeholder="Efternamn"requierd>
+            <input type="text" placeholder="Telefonnummer"requierd> 
+           
+             
+            <div class="btn-box">
+                <button type="button" id="Next1">Nästa</button>
+        </div>
+        </form>
+        <form id="Form2">
+            <h3>Boka Bastu</h3>
+            <div class="topcolor">
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            <input type="text" placeholder="Herr eller dam?">
+            
+            
+            </div>
+             
+            <div class="btn-box">
+            <button type="button" id="Back1">Bakåt</button>
+                <div class="startknapp1">
+                    <a href="/Boka Bana/bekräfta.html">Boka</a></div>
+        </div>
+        </form>
+        
+        </form>
+     
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Sida 1</small></div>
+            <div class="step-col"><small>Sida 2</small></div>
+            
+            
+
+            </div>
+
+            <script>
+
+            var Form1 = document.getElementById("Form1");
+            var Form2 = document.getElementById("Form2");
+            
+
+            var Next1 = document.getElementById("Next1")
+           
+            var Back1 = document.getElementById("Back1")
+            
+
+            var progress = document.getElementById("progress");
+
+            Next1.onclick = function(){
+                Form1.style.left = "-450px";
+                Form2.style.left = "40px";
+                progress.style.width = "240px"
+                
+            }
+            Back1.onclick = function(){
+                Form1.style.left = "40px";
+                Form2.style.left = "450px";
+                progress.style.width = "120px"
+                
+            }
+            
+                
+            
+          
+
+
+
+            </script>
+
+
+</body>
+</html>

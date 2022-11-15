@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Kontakt</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/Header/Loginformulär.css">
+
+</head>
+
+<header>
+  <nav>
+  <ul>
+    <li><a href="/Index.html">
+    <img src="/Logo/bollen.png" alt="tennis" style="width:42px;height:42px;"></a>
+    <li><a href="/Header/Om.html">Om</a></li>
+    <li><a href="/Header/kontakt.html">Kontakt</a></li>
+    <li><a href="/Header/Öppettider.html">Öppettider</a></li>
+    <li><a href="/Header/Följoss.html">Följ Oss</a></li>
+    <li><a href="/Header/Loginformulär.html">Bli Medlem</a></li>
+
+  </ul>
+</nav>
+
+
+</header>
+<body>
+  <div class="container">
+    
+    <form id="Form1">
+      
+      <h3>Personlig information</h3>
+        <input type="text" placeholder="Namn"requierd>
+        <input type="text" placeholder="Efternamn"requierd>
+        <input type="text" placeholder="Telefonnummer"requierd> 
+
+        <div class="btn-box">
+            <button type="button" id="Next1">Nästa</button>
+    </div>
+    </form>
+    
+       <form id="Form2">
+        
+        <h3>Boka Bana</h3>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <div style="margin-top: 45px;">
+      <label for="bana1" style="display:block;
+      margin: 0.5rem 0; ">
+        <input type="radio" id="bana1" name="bana" value="bana" style="width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle; float:left" >Enkelbana</label>
+      <label for="bana2">Dubbelbana
+        <input type="radio" id="bana2" name="bana" value="bana" style="width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle; float:left" ></label>
+      </div>
+          
+        <div class="btn-box">
+            <button type="button" id="Back1">Bakåt</button>
+            <button type="button" id="Next2">Nästa</button>
+    </div>
+    </form>
+    
+    <form id="Form3">
+      
+      
+        <h3>Boka Omklädningsrum</h3>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+        <input type="text" placeholder="Herr eller dam?">
+        <div class="bokatext">
+        <label for="boka"style="padding-top: 10px;">Inget omklädningsrum</label></div>
+        <div class="checkbox">
+        <input type="checkbox" id="boka" name="boka" value="boka"></div>
+        
+            <div class="bakåtknapp">
+            <button type="button" id="Back2">Bakåt</button></div>
+            <div class="startknapp">
+              <a href="/Boka Bana/bekräfta.html">Boka</a></div>
+    </form>
+ 
+    <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>Sida 1</small></div>
+        <div class="step-col"><small>Sida 2</small></div>
+        <div class="step-col"><small>Sida 3</small></div>
+        
+
+        </div>
+        
+        <script>
+
+        var Form1 = document.getElementById("Form1");
+        var Form2 = document.getElementById("Form2");
+        var Form3 = document.getElementById("Form3");
+
+        var Next1 = document.getElementById("Next1")
+        var Next2 = document.getElementById("Next2")
+        var Back1 = document.getElementById("Back1")
+        var Back2 = document.getElementById("Back2")
+
+        var progress = document.getElementById("progress");
+
+        Next1.onclick = function(){
+            Form1.style.left = "-450px";
+            Form2.style.left = "40px";
+            progress.style.width = "240px"
+            
+        }
+        Back1.onclick = function(){
+            Form1.style.left = "40px";
+            Form2.style.left = "450px";
+            progress.style.width = "120px"
+            
+        }
+        Next2.onclick = function(){
+            Form2.style.left = "-450px";
+            Form3.style.left = "40px";
+            progress.style.width = "360px"
+            
+        }
+        Back2.onclick = function(){
+            Form2.style.left = "40px";
+            Form3.style.left = "450px";
+            progress.style.width = "240px"
+            
+        }
+
+
+
+        </script>
+</body>

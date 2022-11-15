@@ -1,0 +1,353 @@
+
+                 /* Background! */
+
+body {
+  background-image: url(logo/tennis1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: wrap;
+  background-size: 200vh;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.40)),url(logo/tennis1.jpg)
+  
+}
+    /* <------------------------------------------HEADER-------------------------------------> */
+  * {
+    margin: 0;
+    padding: 0;
+    
+}   
+
+header ul  {
+  text-decoration: none;
+}
+
+nav{
+  max-width: 100%;
+  height: 50px;
+  
+  background-repeat: no-repeat;
+  background-attachment: wrap;
+  background-size: cover;
+  background-color: black;
+  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=20);
+  -moz-opacity: 0.20;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: arial;
+  color: #55f9ff;
+  padding: 0 20px;
+
+
+}
+.nav2 li {
+    margin-right: 20px;
+}
+li {
+    display: inline;
+    margin-right: 40px;
+    
+ 
+}
+
+ header ul li{
+  max-width: 100%;
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 40px;
+}
+
+header ul li a  {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: arial;
+  color: #55f9ff;
+  padding: 0 0px;
+  
+ 
+}
+header ul li a:hover {
+  color: rgb(82, 223, 0);
+}
+
+/* Huvudfonten med färg */
+article { 
+  background: linear-gradient(
+    to right, 
+    hsl(98 100% 62%), 
+    hsl(204 100% 59%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  
+}
+ /* <------------------------------------MAIN--------------------------------------> */
+.main{
+  height: 95%;
+  
+}
+.content{
+  width: 100;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  padding-left: 500px;
+  top: 430px;
+  font-size: 2vmin;
+  
+}
+/* Knapparna på startsidan  med väljar alternativ */
+button{
+  width: 250px;
+  padding: 25px;
+  text-align: center;
+  margin: 25px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  color: #fff; 
+  text-decoration: none;
+  
+}
+
+span{
+  text-decoration: none;
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%;
+}
+button:hover{
+  border: none;
+}
+
+/* Sizen på huvudmeny fonten */
+h1 {
+  font-size: clamp(3rem, 1rem + 10vw, 7rem);
+  line-height: 3.5;
+  
+  
+   
+}
+
+
+h1, p {
+  
+  padding: 20px;
+   
+ 
+}
+
+
+
+
+
+/* <--------------------------------------FOOTER-------------------------------------------> */
+footer {
+
+  width: 100%;
+  height: 5%;
+  
+  background-repeat: no-repeat;
+  background-attachment: wrap;
+  background-size: cover;
+  background-color: black;
+  
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=20);
+  -moz-opacity: 0.20;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  color: white;
+  display: flex;
+  justify-content: flex;
+  padding: 0px 0px 10px 0px;
+
+}
+
+
+    
+  /* Kontakt-formuläret */
+/* .formulär {
+
+  position: absolute;
+  bottom: 100px;
+  right: 0px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 700px;
+  top: 320px;
+  color: white; */
+/* } */
+
+
+.container-form {
+  width: 100%;
+  height: 20vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+}
+form {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  
+
+}
+form h3{
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 20px;
+
+}
+
+form input, form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+}
+
+form button {
+  
+  color: #555;
+  padding: 15px;
+  background: #ff5361;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  
+
+}
+
+form button:hover{
+  color: #fff;
+}
+
+
+
+.bollhead {
+  position: absolute;
+  bottom: 2px;
+  right: 100px;
+  color: white;
+  padding-left: 20px;
+  left: 735px;
+  bottom: 35px;
+}
+
+.bollhead1 {
+  position: absolute;
+  left: 825px;
+  top: 340px;
+  font-size: 2vmin;
+}
+
+/* }Följ oss mediabilder */
+ .media {
+  width: 250px;
+  padding: 5px;
+  text-align: center;
+  margin: 15px 20px;
+  position: relative;
+  overflow: hidden;
+  left: 660px;
+ }
+ /* Text på följoss sidan */
+.textfacebook {
+  width: 100;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  padding-left: 710px;
+  top: 480px;
+  font-size: 2vmin;
+
+}
+/* Texten på Om Sidan */
+.textom {
+  width: 100;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  padding-left: 370px;
+  top: 400px;
+  font-size: 20px;
+}
+  
+/*   GPS Box */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  
+}
+h2{
+  color: rgb(255, 255, 255);
+  padding-left: 160px;
+  padding-top: 70px;
+  font-family: Courier New, monospace
+  
+}
+iframe{ 
+  width: 300px;
+  height: 300px;
+  padding-top: 1px;
+  padding-left: 100px;
+}
+
+/* Tabell för öppettider */
+table, th, td {
+  
+  align-items: center;
+  height: 20%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding-right: 140px;
+}
+
